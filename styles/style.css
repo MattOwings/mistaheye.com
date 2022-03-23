@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  color: white;
+}
+
+body {
+  background-color: #0e0e0e;
+}
+
+h1 {
+  font-size: 8rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+p {
+  font-size: 3rem;
+}
+
+.top-banner h1,
+.top-banner p {
+  text-align: center;
+}
+
+.top-banner h1 {
+  margin-top: 5rem;
+  margin-bottom: 2.5rem;
+}
+
+.top-banner p {
+  margin-bottom: 5rem;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.flex-item {
+  text-align: center;
+  text-decoration: none;
+  width: 50rem;
+  border: 2px solid white;
+  margin: 2rem;
+  padding: 2rem;
+  /* CSS Gradient */
+  background: #444444;
+  background: linear-gradient(45deg, #444444 10%, #222222 97%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#444444",endColorstr="#222222",GradientType=1);
+  /* ************ */
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.flex-item h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.flex-item p {
+  font-size: 3rem;
+}
+
+.flex-item:hover {
+  border: 2px solid red;
+}
+/*# sourceMappingURL=style.css.map */
