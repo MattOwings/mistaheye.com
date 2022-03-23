@@ -25,21 +25,22 @@ h3 {
 }
 
 p {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
-.top-banner h1,
+.top-banner h2,
 .top-banner p {
   text-align: center;
 }
 
-.top-banner h1 {
+.top-banner h2 {
   margin-top: 5rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1rem;
 }
 
-.top-banner p {
-  margin-bottom: 5rem;
+.main-split {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 .flex {
@@ -80,5 +81,28 @@ p {
 
 .flex-item:hover {
   border: 2px solid red;
+}
+
+.hr {
+  background-color: white;
+  border: 1px solid white;
+}
+
+@media screen and (max-width: 700px) {
+  .top-banner h2 {
+    font-size: 10vw;
+  }
+  .top-banner p {
+    font-size: 5vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .flex a h1 {
+    font-size: 8vw;
+  }
+  .flex a p {
+    font-size: 6vw;
+  }
 }
 /*# sourceMappingURL=style.css.map */
