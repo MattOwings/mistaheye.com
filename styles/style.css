@@ -94,7 +94,19 @@ p {
   margin-top: 25rem;
   margin-bottom: 10rem;
   font-style: italic;
+}
+
+.footer a {
+  font-size: 5rem;
   text-decoration: underline;
+  padding: 2rem;
+  border-radius: 3.5rem;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.footer a:hover {
+  border: .35rem solid red;
 }
 
 @media screen and (max-width: 700px) {
@@ -104,7 +116,7 @@ p {
   .top-banner p {
     font-size: 5vw;
   }
-  .footer h3 {
+  .footer a {
     font-size: 5vw;
   }
 }

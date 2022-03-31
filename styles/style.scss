@@ -100,7 +100,16 @@ p {
     margin-top: 25rem;
     margin-bottom: 10rem;
     font-style: italic;
-    text-decoration: underline;
+    a {
+        font-size: 5rem;
+        text-decoration: underline;
+        padding: 2rem;
+        border-radius: 3.5rem;
+        transition: 0.25s;
+        &:hover {
+            border: .35rem solid red;
+        }
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -113,8 +122,9 @@ p {
         }
     }
     .footer {
-        h3 {
+        a {
             font-size: 5vw;
+            
         }
     }
 }
