@@ -3,6 +3,7 @@
     padding: 0;
     font-size: 10px;
     color: white;
+    font-family: 'Verdana';
 }
 
 body {
@@ -78,11 +79,11 @@ p {
     /* ************ */
 
     h1 {
-        font-size: 4rem;
+        font-size: 2.8rem;
         margin-bottom: 1rem;
     }
     p {
-        font-size: 3rem;
+        font-size: 2.8rem;
     }
     transition: 0.25s;
     &:hover {
@@ -123,8 +124,14 @@ p {
 .instagram a {
     background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
 }
-.websites a {
+.youtube a {
         background: linear-gradient(45deg, #ff0000, #cf0000, #a50000, #700000, #490000, #160000);
+}
+.discord a {
+    background: linear-gradient(45deg, rgb(101, 112, 232), rgb(56, 71, 237), rgb(49, 65, 239), rgb(38, 54, 235), rgb(20, 38, 235), rgb(0, 21, 255));
+}
+.websites a {
+    background: linear-gradient(45deg, #23cf00, #1daf00, #199400, #137400, #0d4e00, #072c00);
 }
 .reddit a {
     background: linear-gradient(45deg, #ff7300, #c03300, #8f2600, #631a00, #1f0c00, #000000);
