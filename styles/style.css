@@ -139,7 +139,7 @@ p {
   }
 }
 
-@media screen and (max-width: 1470px) {
+@media screen and (max-width: 1500px) {
   .flex a {
     width: 80%;
   }
