@@ -112,6 +112,27 @@ p {
     }
 }
 
+.flex-cover .flex a {
+    // All panels
+    border: 2px solid white;
+    &:hover {
+        border: 2px solid red;
+    }
+}
+
+.instagram a {
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+.websites a {
+        background: linear-gradient(45deg, #ff0000, #cf0000, #a50000, #700000, #490000, #160000);
+}
+.reddit a {
+    background: linear-gradient(45deg, #ff7300, #c03300, #8f2600, #631a00, #1f0c00, #000000);
+}
+.swtv a {
+    background: linear-gradient(45deg, #ffbf00, #d6a000, #be8c00, #ac8100, #a99200, #b3aa00);
+}
+
 @media screen and (max-width: 700px) {
     .top-banner {
         h2 {
