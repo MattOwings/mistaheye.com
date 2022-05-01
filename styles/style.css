@@ -58,22 +58,17 @@ p {
 .flex-item {
   text-align: center;
   text-decoration: none;
-  width: 50rem;
+  width: 65rem;
   border: 2px solid white;
   border-radius: 2.5rem;
   margin: 2rem;
   padding: 2rem;
-  /* CSS Gradient */
-  background: #444444;
-  background: linear-gradient(45deg, #444444 10%, #222222 97%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#444444",endColorstr="#222222",GradientType=1);
-  /* ************ */
   -webkit-transition: 0.25s;
   transition: 0.25s;
 }
 
 .flex-item h1 {
-  font-size: 2.8rem;
+  font-size: 3.25rem;
   margin-bottom: 1rem;
 }
 
@@ -90,26 +85,6 @@ p {
   border: 1px solid white;
 }
 
-.footer {
-  text-align: center;
-  margin-top: 25rem;
-  margin-bottom: 10rem;
-  font-style: italic;
-}
-
-.footer a {
-  font-size: 5rem;
-  text-decoration: underline;
-  padding: 2rem;
-  border-radius: 3.5rem;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
-}
-
-.footer a:hover {
-  border: .35rem solid red;
-}
-
 .flex-cover .flex a {
   border: 2px solid white;
 }
@@ -123,7 +98,7 @@ p {
 }
 
 .youtube a {
-  background: linear-gradient(45deg, #ff0000, #cf0000, #a50000, #700000, #490000, #160000);
+  background: linear-gradient(45deg, #ff0000, #d10000, #b80000, #9d0000, #7a0000, #620000);
 }
 
 .discord a {
@@ -131,35 +106,48 @@ p {
 }
 
 .websites a {
-  background: linear-gradient(45deg, #23cf00, #1daf00, #199400, #137400, #0d4e00, #072c00);
+  background: linear-gradient(45deg, #25df00, #22cb00, #1eb300, #1ca800, #1a9d00, #188f00);
 }
 
 .reddit a {
-  background: linear-gradient(45deg, #ff7300, #c03300, #8f2600, #631a00, #1f0c00, #000000);
+  background: linear-gradient(45deg, #ff780a, #ff4400, #da3a00, #c13300, #b14400, #9e3d00);
 }
 
 .swtv a {
-  background: linear-gradient(45deg, #ffbf00, #d6a000, #be8c00, #ac8100, #a99200, #b3aa00);
+  background: linear-gradient(45deg, #ffff00, #dfdf00, #b9b900, #b9b900, #dfdf00, #fff200);
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 740px) {
+  .flex a h1 {
+    font-size: 5vw;
+  }
+  .flex a p {
+    font-size: 4vw;
+  }
+  .discord a:first-child h1 {
+    font-size: 4.75vw;
+  }
+}
+
+@media screen and (max-width: 740px) {
   .top-banner h2 {
-    font-size: 10vw;
+    font-size: 8.5vw;
+    margin-top: 2.5rem;
   }
   .top-banner p {
-    font-size: 5vw;
+    font-size: 6vw;
   }
-  .footer a {
-    font-size: 5vw;
+}
+
+@media screen and (max-width: 1467px) {
+  .flex a {
+    width: 80%;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .flex a h1 {
-    font-size: 8vw;
-  }
-  .flex a p {
-    font-size: 6vw;
+  .flex a {
+    margin: 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
