@@ -46,6 +46,9 @@ p {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    h1, p {
+        margin: 0;
+    }
 }
 .flex-item {
     text-align: center;
@@ -58,7 +61,6 @@ p {
 
     h1 {
         font-size: 3.25rem;
-        margin-bottom: 1rem;
     }
     p {
         font-size: 2.8rem;
@@ -82,22 +84,22 @@ p {
     }
 }
 
-.instagram a {
+.instagram {
     background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
 }
-.youtube a {
+.youtube {
         background: linear-gradient(45deg, #ff0000, #d10000, #b80000, #9d0000, #7a0000, #620000);
 }
-.discord a {
+.discord {
     background: linear-gradient(45deg, rgb(101, 112, 232), rgb(56, 71, 237), rgb(49, 65, 239), rgb(38, 54, 235), rgb(20, 38, 235), rgb(0, 21, 255));
 }
-.websites a {
+.websites {
     background: linear-gradient(45deg, #25df00, #22cb00, #1eb300, #1ca800, #1a9d00, #188f00);
 }
-.reddit a {
+.reddit {
     background: linear-gradient(45deg, #ff780a, #ff4400, #da3a00, #c13300, #b14400, #9e3d00);
 }
-.swtv a {
+.swtv {
     background: linear-gradient(45deg, #ffff00, #dfdf00, #b9b900, #b9b900, #dfdf00, #fff200);
 }
 
