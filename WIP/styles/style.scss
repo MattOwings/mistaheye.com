@@ -1,0 +1,269 @@
+* {
+    font-size: calc(3.5rem * 62.5%);
+    background: rgb(15, 15, 15);
+}
+
+.header {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-image: linear-gradient(
+        45deg,
+        rgb(115, 0, 0),
+        rgb(130, 0, 0),
+        rgb(145, 0, 0),
+        rgb(160, 0, 0),
+        rgb(185, 0, 0),
+        rgb(205, 0, 0)
+    ); // linear-gradient
+    height: 17.5rem;
+    h1 {
+        color: white;
+        font-size: 3.5rem;
+        background: 0;
+    }
+    .eyeball-logo {
+        width: 10rem;
+        background: 0;
+    }
+}
+
+.main-content {
+    padding-top: 2.5rem;
+    background-image: linear-gradient(
+        135deg,
+        black,
+        rgb(3, 3, 3),
+        rgb(6, 6, 6),
+        rgb(9, 9, 9),
+        rgb(12, 12, 12),
+        rgb(15, 15, 15),
+        rgb(18, 18, 18),
+        rgb(21, 21, 21)
+    );
+    height: 60rem;
+    h1,
+    h2 {
+        color: white;
+        text-align: center;
+        background: 0;
+    }
+    .flex {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background: 0;
+    }
+    .link {
+        background: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        margin: 0.5rem;
+        text-decoration: none;
+        //border: 2px solid white;
+        padding: 1rem;
+        width: 30rem;
+        height: 8.5rem;
+        //border-radius: 1.5rem;
+        /*background-image: linear-gradient(
+            135deg,
+            black,
+            rgb(5, 5, 5),
+            rgb(10, 10, 10),
+            rgb(15, 15, 15),
+            rgb(10, 10, 10)
+        );*/
+        /*transition: 0.25s;
+        &:hover {
+            border: 2px solid red;
+        }*/
+    }
+}
+
+.instagram {
+    position: relative;
+    border-radius: 1.5rem;
+}
+.instagram:hover {
+    h1,
+    h2 {
+        transition: 0.25s;
+        color: red;
+    }
+}
+.instagram::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 1.5rem;
+    border: 5px solid transparent;
+    background: linear-gradient(
+            45deg,
+            #405de6,
+            #5851db,
+            #833ab4,
+            #c13584,
+            #e1306c,
+            #fd1d1d
+        )
+        border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+}
+.youtube {
+    position: relative;
+}
+.youtube:hover {
+    h1,
+    h2 {
+        transition: 0.25s;
+        color: red;
+    }
+}
+.youtube::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 1.5rem;
+    border: 5px solid transparent;
+    background: linear-gradient(
+            45deg,
+            #ff0000,
+            #d10000,
+            #b80000,
+            #9d0000,
+            #7a0000,
+            #620000
+        )
+        border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+}
+.discord {
+    position: relative;
+}
+.discord:hover {
+    h1,
+    h2 {
+        transition: 0.25s;
+        color: red;
+    }
+}
+.discord::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 1.5rem;
+    border: 5px solid transparent;
+    background: linear-gradient(
+            45deg,
+            rgb(101, 112, 232),
+            rgb(56, 71, 237),
+            rgb(49, 65, 239),
+            rgb(38, 54, 235),
+            rgb(20, 38, 235),
+            rgb(0, 21, 255)
+        )
+        border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+}
+.websites {
+    position: relative;
+}
+.websites:hover {
+    h1,
+    h2 {
+        transition: 0.25s;
+        color: red;
+    }
+}
+.websites::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 1.5rem;
+    border: 5px solid transparent;
+    background: linear-gradient(
+            45deg,
+            #25df00,
+            #22cb00,
+            #1eb300,
+            #1ca800,
+            #1a9d00,
+            #188f00
+        )
+        border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+}
+.reddit {
+    position: relative;
+}
+.reddit:hover {
+    h1,
+    h2 {
+        transition: 0.25s;
+        color: red;
+    }
+}
+.reddit::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 1.5rem;
+    border: 5px solid transparent;
+    background: linear-gradient(
+            45deg,
+            #ff780a,
+            #ff4400,
+            #da3a00,
+            #c13300,
+            #b14400,
+            #9e3d00
+        )
+        border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+}
+
+.footer {
+    background: 0;
+    padding-bottom: 5rem;
+    .copyright {
+        margin-top: 5rem;
+        font-size: 1.5rem;
+    }
+}
