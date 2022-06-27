@@ -145,9 +145,14 @@ body {
     // Column 1 by 1 elements
     // Header scaling
     .main-content {
+        padding-top: .5rem !important;
         .flex {
             .inner {
+                margin: .25rem;
                 .link {
+                    h1, h2 {
+                        margin: 0;
+                    }
                     width: 80vw;
                 }
             }
@@ -164,7 +169,17 @@ body {
 }
 @media screen and (max-width: 800px) {
     // Font size starts to get too crowded with lack of space
+    .header {
+        height: 20vh !important;
+    }
+    .main-content {
+        padding-top: .25rem !important;
+    }
+    .inner {
+        margin: 0.5rem !important;
+    }
     .link {
+        height: 6rem !important;
         h1 {
             font-size: 5vw;
         }
@@ -196,6 +211,13 @@ body {
 }
 @media screen and (max-width: 500px) {
     // Font size starts to get too crowded with lack of space
+    // Removed margin to save space
+    .main-content {
+        padding-top: 0 !important;
+    }
+    .inner {
+        margin: .25rem !important;
+    }
     .link {
         h1 {
             font-size: 7vw;
@@ -210,11 +232,14 @@ body {
     // Footer needs more space
 
     .link {
+        height: 4rem !important ;
         h1 {
-            font-size: 7.5vw;
+            font-size: 6.5vw;
+            margin: 0;
         }
         h2 {
-            font-size: 5.75vw;
+            font-size: 4.75vw;
+            margin: 0;
         }
     }
     .footer {
@@ -225,13 +250,12 @@ body {
 }
 @media screen and (max-width: 300px) {
     // Font size starts to get too crowded with lack of space
-
     .link {
         h1 {
-            font-size: 9vw;
+            font-size: 6vw;
         }
         h2 {
-            font-size: 9vw;
+            font-size: 5vw;
         }
     }
 }
@@ -240,10 +264,10 @@ body {
 
     .link {
         h1 {
-            font-size: 11vw;
+            font-size: 6vw;
         }
         h2 {
-            font-size: 11vw;
+            font-size: 5.5vw;
         }
     }
 }
