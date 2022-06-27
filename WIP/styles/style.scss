@@ -80,15 +80,7 @@
     );
 }
 .youtube {
-    background: linear-gradient(
-        45deg,
-        #ff0000,
-        #d10000,
-        #b80000,
-        #9d0000,
-        #7a0000,
-        #620000
-    );
+    background: linear-gradient(45deg, #f80000, #e80000, #d80000);
 }
 .discord {
     background: linear-gradient(
@@ -102,26 +94,10 @@
     );
 }
 .websites {
-    background: linear-gradient(
-        45deg,
-        #25df00,
-        #22cb00,
-        #1eb300,
-        #1ca800,
-        #1a9d00,
-        #188f00
-    );
+    background: linear-gradient(45deg, #25df00, #22cb00, #1eb300);
 }
 .reddit {
-    background: linear-gradient(
-        45deg,
-        #ff780a,
-        #ff4400,
-        #da3a00,
-        #c13300,
-        #b14400,
-        #9e3d00
-    );
+    background: linear-gradient(45deg, #ff7300, #e86900, #de6400);
 }
 .yellow {
     background: linear-gradient(
@@ -151,3 +127,110 @@
 // DESKTOP: >1600 // Room for all elements to be completely expanded
 // TABLET: 1600-1100px // Elements begin to stack up, up to 2 in a row
 // MOBILE: <1100px // All elements are columned one one one // Currently completely broken under 550px
+
+@media screen and (max-width: 1100px) {
+    // Column 1 by 1 elements
+    // Header scaling
+    .main-content {
+        .flex {
+            .inner {
+                .link {
+                    width: 80vw;
+                }
+            }
+        }
+    }
+    .header {
+        h1 {
+            font-size: calc(3vw + 1.5rem);
+        }
+        .eyeball-logo {
+            width: calc(6vw + 4.5rem);
+        }
+    }
+}
+@media screen and (max-width: 800px) {
+    // Font size starts to get too crowded with lack of space
+    .link {
+        h1 {
+            font-size: 5vw;
+        }
+        h2 {
+            font-size: 4vw;
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    // Font size starts to get too crowded with lack of space
+
+    // Shrink header and begin to decrease font and image size
+    .header {
+        h1 {
+            font-size: 10vw;
+        }
+        .eyeball-logo {
+            width: calc(6vw + 4.5rem);
+        }
+    }
+    .link {
+        h1 {
+            font-size: 6vw;
+        }
+        h2 {
+            font-size: 5vw;
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    // Font size starts to get too crowded with lack of space
+    .link {
+        h1 {
+            font-size: 7vw;
+        }
+        h2 {
+            font-size: 6vw;
+        }
+    }
+}
+@media screen and (max-width: 400px) {
+    // Font size starts to get too crowded with lack of space
+    // Footer needs more space
+
+    .link {
+        h1 {
+            font-size: 7.5vw;
+        }
+        h2 {
+            font-size: 5.75vw;
+        }
+    }
+    .footer {
+        h1 {
+            font-size: 5vw !important;
+        }
+    }
+}
+@media screen and (max-width: 300px) {
+    // Font size starts to get too crowded with lack of space
+
+    .link {
+        h1 {
+            font-size: 9vw;
+        }
+        h2 {
+            font-size: 9vw;
+        }
+    }
+}
+@media screen and (max-width: 200px) {
+    // Font size starts to get too crowded with lack of space
+
+    .link {
+        h1 {
+            font-size: 11vw;
+        }
+        h2 {
+            font-size: 11vw;
+        }
+    }
+}

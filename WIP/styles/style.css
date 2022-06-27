@@ -92,7 +92,7 @@
 }
 
 .youtube {
-  background: linear-gradient(45deg, #ff0000, #d10000, #b80000, #9d0000, #7a0000, #620000);
+  background: linear-gradient(45deg, #f80000, #e80000, #d80000);
 }
 
 .discord {
@@ -100,11 +100,11 @@
 }
 
 .websites {
-  background: linear-gradient(45deg, #25df00, #22cb00, #1eb300, #1ca800, #1a9d00, #188f00);
+  background: linear-gradient(45deg, #25df00, #22cb00, #1eb300);
 }
 
 .reddit {
-  background: linear-gradient(45deg, #ff780a, #ff4400, #da3a00, #c13300, #b14400, #9e3d00);
+  background: linear-gradient(45deg, #ff7300, #e86900, #de6400);
 }
 
 .yellow {
@@ -126,5 +126,80 @@
   width: 75%;
   margin-top: 5rem;
   font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1100px) {
+  .main-content .flex .inner .link {
+    width: 80vw;
+  }
+  .header h1 {
+    font-size: calc(3vw + 1.5rem);
+  }
+  .header .eyeball-logo {
+    width: calc(6vw + 4.5rem);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .link h1 {
+    font-size: 5vw;
+  }
+  .link h2 {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header h1 {
+    font-size: 10vw;
+  }
+  .header .eyeball-logo {
+    width: calc(6vw + 4.5rem);
+  }
+  .link h1 {
+    font-size: 6vw;
+  }
+  .link h2 {
+    font-size: 5vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .link h1 {
+    font-size: 7vw;
+  }
+  .link h2 {
+    font-size: 6vw;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .link h1 {
+    font-size: 7.5vw;
+  }
+  .link h2 {
+    font-size: 5.75vw;
+  }
+  .footer h1 {
+    font-size: 5vw !important;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .link h1 {
+    font-size: 9vw;
+  }
+  .link h2 {
+    font-size: 9vw;
+  }
+}
+
+@media screen and (max-width: 200px) {
+  .link h1 {
+    font-size: 11vw;
+  }
+  .link h2 {
+    font-size: 11vw;
+  }
 }
 /*# sourceMappingURL=style.css.map */
