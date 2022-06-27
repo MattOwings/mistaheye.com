@@ -1,50 +1,58 @@
 * {
-  margin: 0;
-  padding: 0;
-  font-size: 10px;
-  color: white;
-  font-family: 'Verdana';
+  font-size: calc(3.5rem * 62.5%);
+  background: #0f0f0f;
 }
 
+html,
 body {
-  background-color: #0e0e0e;
+  background: #0f0f0f;
 }
 
-h1 {
-  font-size: 8rem;
-  font-weight: bold;
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: linear-gradient(45deg, #730000, #820000, #910000, #a00000, #b90000, #cd0000);
+  height: 17.5rem;
 }
 
-h2 {
-  font-size: 6rem;
-  font-weight: bold;
+.header h1 {
+  color: #f0f0f0;
+  font-size: 3.5rem;
+  background: 0;
 }
 
-h3 {
-  font-size: 4rem;
-  font-weight: bold;
+.header .eyeball-logo {
+  width: 10rem;
+  background: 0;
 }
 
-p {
-  font-size: 4rem;
+.main-content {
+  padding-top: 2.5rem;
+  background: #0f0f0f;
+  height: 60rem;
 }
 
-.top-banner h2,
-.top-banner p {
+.main-content h1,
+.main-content h2 {
+  color: #f0f0f0;
   text-align: center;
+  background: 0;
 }
 
-.top-banner h2 {
-  margin-top: 5rem;
-  margin-bottom: 1rem;
-}
-
-.main-split {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-}
-
-.flex {
+.main-content .flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -53,47 +61,46 @@ p {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  background: #0f0f0f;
 }
 
-.flex h1, .flex p {
-  margin: 0;
+.main-content .flex .inner {
+  border-radius: 2rem;
+  margin: 1rem;
 }
 
-.flex-item {
-  text-align: center;
+.main-content .flex .inner .link {
+  background: #0f0f0f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0.5rem;
   text-decoration: none;
-  width: 65rem;
-  border: 2px solid white;
-  border-radius: 2.5rem;
-  margin: 2rem;
-  padding: 2rem;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
+  padding: 1rem;
+  width: 30rem;
+  height: 8.5rem;
+  border-radius: 1.75rem;
 }
 
-.flex-item h1 {
-  font-size: 3.25rem;
-}
-
-.flex-item p {
-  font-size: 2.8rem;
-}
-
-.flex-item:hover {
-  border: 2px solid red;
-}
-
-.hr {
-  background-color: white;
-  border: 1px solid white;
-}
-
-.flex-cover .flex a {
-  border: 2px solid white;
-}
-
-.flex-cover .flex a:hover {
-  border: 2px solid red;
+.link:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background: rgba(0, 0, 0, 0) !important;
+  /*h1,
+    h2 {
+        transition: 0.25s;
+        color: red;
+    }*/
 }
 
 .instagram {
@@ -101,7 +108,7 @@ p {
 }
 
 .youtube {
-  background: linear-gradient(45deg, #ff0000, #d10000, #b80000, #9d0000, #7a0000, #620000);
+  background: linear-gradient(45deg, #f80000, #e80000, #d80000);
 }
 
 .discord {
@@ -109,48 +116,106 @@ p {
 }
 
 .websites {
-  background: linear-gradient(45deg, #25df00, #22cb00, #1eb300, #1ca800, #1a9d00, #188f00);
+  background: linear-gradient(45deg, #25df00, #22cb00, #1eb300);
 }
 
 .reddit {
-  background: linear-gradient(45deg, #ff780a, #ff4400, #da3a00, #c13300, #b14400, #9e3d00);
+  background: linear-gradient(45deg, #ff7300, #e86900, #de6400);
 }
 
-.swtv {
+.yellow {
   background: linear-gradient(45deg, #ffff00, #dfdf00, #b9b900, #b9b900, #dfdf00, #fff200);
 }
 
-@media screen and (max-width: 740px) {
-  .flex a h1 {
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: 0;
+  padding-bottom: 5rem;
+}
+
+.footer .copyright {
+  width: 75%;
+  margin-top: 5rem;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1100px) {
+  .main-content .flex .inner .link {
+    width: 80vw;
+  }
+  .header h1 {
+    font-size: calc(3vw + 1.5rem);
+  }
+  .header .eyeball-logo {
+    width: calc(6vw + 4.5rem);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .link h1 {
     font-size: 5vw;
   }
-  .flex a p {
+  .link h2 {
     font-size: 4vw;
   }
-  .discord a:first-child h1 {
-    font-size: 4.75vw;
-  }
 }
 
-@media screen and (max-width: 740px) {
-  .top-banner h2 {
-    font-size: 8.5vw;
-    margin-top: 2.5rem;
+@media screen and (max-width: 600px) {
+  .header h1 {
+    font-size: 10vw;
   }
-  .top-banner p {
+  .header .eyeball-logo {
+    width: calc(6vw + 4.5rem);
+  }
+  .link h1 {
     font-size: 6vw;
   }
-}
-
-@media screen and (max-width: 1500px) {
-  .flex a {
-    width: 95%;
+  .link h2 {
+    font-size: 5vw;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .flex a {
-    margin: 1rem;
+  .link h1 {
+    font-size: 7vw;
+  }
+  .link h2 {
+    font-size: 6vw;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .link h1 {
+    font-size: 7.5vw;
+  }
+  .link h2 {
+    font-size: 5.75vw;
+  }
+  .footer h1 {
+    font-size: 5vw !important;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .link h1 {
+    font-size: 9vw;
+  }
+  .link h2 {
+    font-size: 9vw;
+  }
+}
+
+@media screen and (max-width: 200px) {
+  .link h1 {
+    font-size: 11vw;
+  }
+  .link h2 {
+    font-size: 11vw;
   }
 }
 /*# sourceMappingURL=style.css.map */
