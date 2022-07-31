@@ -146,15 +146,16 @@ body {
 
 @media screen and (max-width: 1100px) {
   .main-content {
-    padding-top: .5rem !important;
+    padding-top: 0.5rem !important;
   }
   .main-content .flex .inner {
-    margin: .25rem;
+    margin: 0.25rem;
   }
   .main-content .flex .inner .link {
     width: 80vw;
   }
-  .main-content .flex .inner .link h1, .main-content .flex .inner .link h2 {
+  .main-content .flex .inner .link h1,
+  .main-content .flex .inner .link h2 {
     margin: 0;
   }
   .header h1 {
@@ -170,7 +171,7 @@ body {
     height: 20vh !important;
   }
   .main-content {
-    padding-top: .25rem !important;
+    padding-top: 0.25rem !important;
   }
   .inner {
     margin: 0.5rem !important;
@@ -206,7 +207,7 @@ body {
     padding-top: 0 !important;
   }
   .inner {
-    margin: .25rem !important;
+    margin: 0.25rem !important;
   }
   .link h1 {
     font-size: 7vw;

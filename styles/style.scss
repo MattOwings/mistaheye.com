@@ -145,12 +145,13 @@ body {
     // Column 1 by 1 elements
     // Header scaling
     .main-content {
-        padding-top: .5rem !important;
+        padding-top: 0.5rem !important;
         .flex {
             .inner {
-                margin: .25rem;
+                margin: 0.25rem;
                 .link {
-                    h1, h2 {
+                    h1,
+                    h2 {
                         margin: 0;
                     }
                     width: 80vw;
@@ -173,7 +174,7 @@ body {
         height: 20vh !important;
     }
     .main-content {
-        padding-top: .25rem !important;
+        padding-top: 0.25rem !important;
     }
     .inner {
         margin: 0.5rem !important;
@@ -216,7 +217,7 @@ body {
         padding-top: 0 !important;
     }
     .inner {
-        margin: .25rem !important;
+        margin: 0.25rem !important;
     }
     .link {
         h1 {

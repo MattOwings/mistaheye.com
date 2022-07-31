@@ -1,3 +1,3 @@
-# https://mistaheye.com
+# https://www.mistaheye.com
 
-Landing Page Web Application
+Web Application page that redirects to my links subdomain (https://links.mistaheye.com/) and my publication Web Application (https://www.entertainmentdork.com/)
